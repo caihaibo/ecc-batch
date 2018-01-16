@@ -4,7 +4,7 @@
                 "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-    <classPathEntry location="C:\mysql\mysql.jar" />
+    <classPathEntry location="/Users/caihaibo/xx/mysql.jar" />
 
     <context id="DB2Tables" targetRuntime="MyBatis3">
 
@@ -13,8 +13,8 @@
     </commentGenerator>
 
     <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                    connectionURL="jdbc:mysql://localhost:3306/manager" userId="root"
-                    password="root">
+                    connectionURL="jdbc:mysql://127.0.0.1:3306/yhc" userId="root"
+                    password="12345678">
     </jdbcConnection>
 
     <javaTypeResolver>
@@ -37,7 +37,7 @@
         <property name="enableSubPackages" value="true" />
     </javaClientGenerator>
 
-   	<table tableName="user" domainObjectName="User"></table>
+   	<table tableName="t_user" domainObjectName="User"></table>
 
 
 </context>
